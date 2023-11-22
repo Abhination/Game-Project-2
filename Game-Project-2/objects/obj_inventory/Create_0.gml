@@ -4,7 +4,7 @@ scale=2;
 x_buffer=2;
 y_buffer=4;	
 
-show_inventory=true;
+show_inventory=false;
 cell_size=32;
 
 gui_height=display_get_gui_height();
