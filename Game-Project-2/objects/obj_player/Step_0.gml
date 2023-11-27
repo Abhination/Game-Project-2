@@ -40,3 +40,5 @@ if (right_key)
 // Update the bee's position
 x += move_x;
 y += move_y;
+
+
