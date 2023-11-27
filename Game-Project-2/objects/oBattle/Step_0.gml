@@ -1,3 +1,5 @@
+
+
 //Run State Machines
 battleState();
 
@@ -44,11 +46,52 @@ if(cursor.active)
 			
 			//warp
 			var _targets=array_length(targetSide);
+			
+//			if(targetIndex==-1)
+//{
+	
+//	with(all)
+//		{
+			
+//			if(object_index!=oBattle.object_index)
+//			{
+//				instance_destroy();
+//			//	instance_activate_all();
+//			}
+//		}
+//		instance_activate_all();
+//		instance_destroy();
+//}
+
+			//show_debug_message(_targets);
 			if(targetIndex<0) targetIndex=_targets-1;
 			if(targetIndex>(_targets-1)) targetIndex=0;
 			
 			//identify targets
-			activeTarget= targetSide[targetIndex];
+			try 
+			{
+				activeTarget = targetSide[targetIndex];
+			}
+			catch (err) 
+			{
+				with(all)
+				{
+					instance_destroy();
+					//instance_destroy(oBattleEffect);
+					//instance_destroy(oBattleFloatingText);
+					//instance_destroy(oBattleUnit);
+					//instance_destroy(oBattleUnitEnemy);
+					//instance_destroy(oBattleUnitPC);
+					//instance_destroy(oMenu);
+					
+				}	
+				instance_activate_all();
+				//instance_destroy();
+				// Handle the error
+				//var errorMessage = "Error in oBattle: " + string(err);
+				//show_error(errorMessage);
+				// Alternatively, you could log the error to a file or take other appropriate actions
+			}
 			
 			//toggle all mode
 			if(activeAction.targetAll==MODE.VARIES)&&(_keyToggle)//switch to all mode
@@ -81,4 +124,8 @@ if(cursor.active)
 			confirmDelay=0;
 		}
 	}
+	
+	
 }
+
+

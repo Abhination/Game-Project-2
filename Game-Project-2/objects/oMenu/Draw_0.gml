@@ -1,4 +1,4 @@
-﻿
+
 draw_sprite_stretched (spr_box, 0, x+700, y+350, widthFull*4, heightFull*1.45);
 draw_set_color(c_white);
 draw_set_font(fnt_text_24);

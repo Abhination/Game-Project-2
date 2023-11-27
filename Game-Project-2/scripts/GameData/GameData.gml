@@ -53,7 +53,7 @@ global.party =
 	{
 		name: "Ally1",
 		hp: 89,
-		hpMax: 89,
+		hpMax: 9000,
 		mp: 10,
 		mpMax: 15,
 		strength: 6,
