@@ -16,6 +16,7 @@ currentuser=noone;
 currentAction=-1;
 currentTargets=noone;
 
+//
 
 //make targetting cursor
 cursor=
@@ -35,13 +36,18 @@ for(var i=0; i<array_length(enemies); i++)
 {
 	enemyUnits[i]= instance_create_depth(x+1750+(i*10), y+268+(i*120),depth -10, oBattleUnitEnemy, enemies[i]);
 	array_push(units, enemyUnits[i]);
+	enemyUnits[i].xpValue = enemies[i].xpValue;
 }
 
 //make allies
 for(var i=0; i<array_length(global.party); i++)
 {
-	partyUnits[i]= instance_create_depth(x+250+(i*10), y+268+(i*120),depth -10, oBattleUnitPC, global.party[i]);
-	array_push(units, partyUnits[i]);
+	
+	if(global.party[i] != noone){
+		partyUnits[i]= instance_create_depth(x+250+(i*10), y+268+(i*120),depth -10, oBattleUnitPC, global.party[i]);
+		array_push(units, partyUnits[i]);
+	}
+	
 }
 
 //Shuffle Trun Order

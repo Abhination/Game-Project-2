@@ -77,20 +77,10 @@ if(cursor.active)
 				with(all)
 				{
 					instance_destroy();
-					//instance_destroy(oBattleEffect);
-					//instance_destroy(oBattleFloatingText);
-					//instance_destroy(oBattleUnit);
-					//instance_destroy(oBattleUnitEnemy);
-					//instance_destroy(oBattleUnitPC);
-					//instance_destroy(oMenu);
-					
 				}	
 				instance_activate_all();
-				//instance_destroy();
-				// Handle the error
-				//var errorMessage = "Error in oBattle: " + string(err);
-				//show_error(errorMessage);
-				// Alternatively, you could log the error to a file or take other appropriate actions
+				instance_destroy(global.currentEnemyObject);
+				
 			}
 			
 			//toggle all mode
