@@ -1,6 +1,6 @@
 if(place_meeting(x,y,obj_player))
 {
-	if(keyboard_check_pressed(vk_space))
+	if(keyboard_check_pressed(ord("Z")))
 	{
 		if(myTextbox==noone)
 		{

@@ -7,10 +7,10 @@ x = clamp(x, 0, room_width);
 y = clamp(y, 0, room_height);
 
 // Check for arrow key presses
-var up_key = keyboard_check(vk_up);
-var down_key = keyboard_check(vk_down);
-var left_key = keyboard_check(vk_left);
-var right_key = keyboard_check(vk_right);
+var up_key = keyboard_check(ord("W"));
+var down_key = keyboard_check(ord("S"));
+var left_key = keyboard_check(ord("A"));
+var right_key = keyboard_check(ord("D"));
 
 //image_angle=0;
 		
@@ -21,7 +21,6 @@ if (up_key)
     }
 if (down_key)
     {
-		image_yscale=-1;
         move_y += movement_speed; // Move downward
     }
 if (left_key)
