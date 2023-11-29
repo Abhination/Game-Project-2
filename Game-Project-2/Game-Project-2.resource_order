@@ -87,6 +87,7 @@
     {"name":"spr_ally1_Down","order":2,"path":"sprites/spr_ally1_Down/spr_ally1_Down.yy",},
     {"name":"oEnemy2_CF2_StrM","order":3,"path":"objects/oEnemy2_CF2_StrM/oEnemy2_CF2_StrM.yy",},
     {"name":"oMenu","order":6,"path":"objects/oMenu/oMenu.yy",},
+    {"name":"oEnemyBoss","order":6,"path":"objects/oEnemyBoss/oEnemyBoss.yy",},
     {"name":"spr_wall","order":12,"path":"sprites/spr_wall/spr_wall.yy",},
     {"name":"pEnemy4","order":3,"path":"objects/pEnemy4/pEnemy4.yy",},
     {"name":"spr_attackIce","order":1,"path":"sprites/spr_attackIce/spr_attackIce.yy",},

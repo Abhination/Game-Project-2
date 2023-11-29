@@ -123,6 +123,7 @@
     {"id":{"name":"oEnemy2_CF2_StrM","path":"objects/oEnemy2_CF2_StrM/oEnemy2_CF2_StrM.yy",},},
     {"id":{"name":"oMenu","path":"objects/oMenu/oMenu.yy",},},
     {"id":{"name":"spr_inventory_UI","path":"sprites/spr_inventory_UI/spr_inventory_UI.yy",},},
+    {"id":{"name":"oEnemyBoss","path":"objects/oEnemyBoss/oEnemyBoss.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"pEnemy4","path":"objects/pEnemy4/pEnemy4.yy",},},
     {"id":{"name":"spr_attackIce","path":"sprites/spr_attackIce/spr_attackIce.yy",},},
