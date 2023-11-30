@@ -1,11 +1,11 @@
 if (active)
 {
 	//Control menu with keyboard
-	hover += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up);
+	hover += keyboard_check_pressed(ord("S")) - keyboard_check_pressed(ord("W"));
 	if (hover > array_length(options)-1) hover = 0; 
 	if (hover < 0) hover = array_length(options)-1;
 	//Execute selected option
-	if (keyboard_check_pressed(vk_enter))
+	if (keyboard_check_pressed((ord("Z"))))
 	{
 		if (array_length(options[hover]) > 1) && (options[hover][3] == true)
 		{
@@ -17,7 +17,7 @@ if (active)
 		}
 	}
 	
-	if (keyboard_check_pressed(vk_escape))
+	if (keyboard_check_pressed(ord("X")))
 	{
 		if (subMenuLevel > 0) MenuGoBack();
 	}
