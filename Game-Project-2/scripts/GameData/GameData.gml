@@ -78,9 +78,27 @@ global.actionLibrary =
 				instance_activate_all();
 				obj_player.x = obj_player.xprevious;
 				obj_player.y = obj_player.yprevious;
-
 			}
-			
+		}
+	}
+	,
+	heal:
+	{
+		name : "Heal",
+		description : "{0} casts Heal!",
+		subMenu : "Magic",
+		mpCost : 10,
+		targetRequired : true,
+		targetEnemyByDefault : false,//0:party 1:enemy
+		targetAll: MODE.NEVER,
+		userAnimation:"cast",
+		effectSprite: spr_attackIce,
+		effectOnTarget: MODE.ALWAYS,
+		func : function(_user,_targets)
+		{
+			var _healAmount = ceil(_user.intelligence + random_range(-mpCost, mpCost) + 2*_targets[0].constitution)
+			BattleChangeHP(_targets[0], _healAmount);
+			//BattleChangeMP(_user,_mpCost)
 		}
 	}
 }
@@ -93,12 +111,14 @@ enum MODE
 }
 
 enum CLASS {
+	
 	ADVENTURER = 0,
 	GAURDIAN = 1,
 	WARRIOR = 2,
 	KNIGHT = 3,
 	MAGE = 4,
-	ROUGE = 5
+	ROUGE = 5,
+	HEALER = 6
 }
 
 
@@ -154,7 +174,7 @@ global.allies = {
 		intelligence: 10,
 		agility: 10,
 		sprites: {idle: spr_ally2_Idle, attack: spr_ally2_Attack, defend: spr_ally2_Defend, down: spr_ally2_Down},
-		actions: [global.actionLibrary.attack, global.actionLibrary.ice]
+		actions: [global.actionLibrary.attack, global.actionLibrary.ice, global.actionLibrary.heal]
 	}
 }
 
@@ -165,15 +185,15 @@ global.enemies =
 {
 	Enemy1: 
 	{
-		name: "Enemy 1",
+		name: "Blue Slime",
 		level: 1,
 		hp: 30,
 		hpMax: 30,
 		mp: 0,
 		mpMax: 0,
 		constitution: 10,
-		strength: 10,
-		defense: 10, 
+		strength: 8,
+		defense: 10,
 		intelligence: 2,
 		agility: 5,
 		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
@@ -231,6 +251,13 @@ function level_up(_character){
 	_character.agility++;
 	var currentClass = _character.class;
 	switch(_character.class){
+		case CLASS.HEALER:
+			var i = random_range(0, 100)
+			if(i <= 50){
+				_character.class = CLASS.MAGE;
+			} else {
+				_character.class = CLASS.GAURDIAN;	
+			}
 		case CLASS.ADVENTURER: 
 			_character.class = random_range(CLASS.ADVENTURER+1, CLASS.ROUGE)
 			break;

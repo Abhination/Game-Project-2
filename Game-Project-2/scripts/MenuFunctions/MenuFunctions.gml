@@ -1,4 +1,4 @@
-﻿
+
 /// @desc Menu - makes a menu, options provided in the form [["name", function, argument], [.......]] I
 function Menu(_x, _y, _options, _description = -1, _width = undefined, _height = undefined)
 {
@@ -90,7 +90,7 @@ function MenuSelectAction(_user,_action)
 					activeTarget=activeUser;
 					var _findSelf= function(_element,_user)
 					{
-						return(_element == cursorTarget)
+						return(_element == activeTarget)
 					}
 					targetIndex=array_find_index(oBattle.partyUnits,_findSelf);
 				}

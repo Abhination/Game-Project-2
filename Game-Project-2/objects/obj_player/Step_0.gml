@@ -41,3 +41,17 @@ x += move_x;
 y += move_y;
 
 
+if(keyboard_check_pressed(ord("R")))
+{
+	if(myTextbox==noone)
+	{
+		myTextbox=instance_create_layer(x, y,"Text",obj_status);
+		//myTextbox.text=myText;
+		myTextbox.creator=self;
+		//myTextbox.name=myName;
+	}
+	else {
+		instance_destroy(myTextbox);
+		myTextbox=noone;
+	}
+}
