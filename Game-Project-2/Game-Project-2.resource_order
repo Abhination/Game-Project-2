@@ -29,6 +29,7 @@
     {"name":"UI","order":6,"path":"folders/Sprites/UI.yy",},
     {"name":"Tile Sets","order":1,"path":"folders/Tile Sets.yy",},
     {"name":"Timelines","order":7,"path":"folders/Timelines.yy",},
+    {"name":"pCove","order":10,"path":"folders/Paths/pCove.yy",},
   ],
   "ResourceOrderSettings": [
     {"name":"spr_grass","order":8,"path":"sprites/spr_grass/spr_grass.yy",},
@@ -52,6 +53,7 @@
     {"name":"rCrossroads","order":1,"path":"rooms/rCrossroads/rCrossroads.yy",},
     {"name":"spr_ally2_Attack","order":4,"path":"sprites/spr_ally2_Attack/spr_ally2_Attack.yy",},
     {"name":"oBattleUnitEnemy","order":2,"path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},
+    {"name":"oEnemy5","order":5,"path":"objects/oEnemy5/oEnemy5.yy",},
     {"name":"obj_tavern","order":3,"path":"objects/obj_tavern/obj_tavern.yy",},
     {"name":"oEnemy1_CF2_Poly","order":5,"path":"objects/oEnemy1_CF2_Poly/oEnemy1_CF2_Poly.yy",},
     {"name":"spr_ally2_Idle","order":7,"path":"sprites/spr_ally2_Idle/spr_ally2_Idle.yy",},
@@ -68,7 +70,7 @@
     {"name":"oCamera","order":1,"path":"objects/oCamera/oCamera.yy",},
     {"name":"oEnemy1_CF2_Circle","order":1,"path":"objects/oEnemy1_CF2_Circle/oEnemy1_CF2_Circle.yy",},
     {"name":"obj_npc1","order":2,"path":"objects/obj_npc1/obj_npc1.yy",},
-    {"name":"pEnemyPathS","order":1,"path":"paths/pEnemyPathS/pEnemyPathS.yy",},
+    {"name":"pEnemyPathS","order":3,"path":"paths/pEnemyPathS/pEnemyPathS.yy",},
     {"name":"BattleFunctions","order":1,"path":"scripts/BattleFunctions/BattleFunctions.yy",},
     {"name":"oBattleEffect","order":4,"path":"objects/oBattleEffect/oBattleEffect.yy",},
     {"name":"rCoveF2","order":3,"path":"rooms/rCoveF2/rCoveF2.yy",},
@@ -93,6 +95,7 @@
     {"name":"pEnemy4","order":3,"path":"objects/pEnemy4/pEnemy4.yy",},
     {"name":"spr_attackIce","order":1,"path":"sprites/spr_attackIce/spr_attackIce.yy",},
     {"name":"spr_ally1_Attack","order":1,"path":"sprites/spr_ally1_Attack/spr_ally1_Attack.yy",},
+    {"name":"pEnemyPathCircle2","order":1,"path":"paths/pEnemyPathCircle2/pEnemyPathCircle2.yy",},
     {"name":"spr_inventory_items","order":1,"path":"sprites/spr_inventory_items/spr_inventory_items.yy",},
   ],
 }

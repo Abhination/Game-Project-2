@@ -5,8 +5,8 @@
   "closed": false,
   "kind": 0,
   "parent": {
-    "name": "Paths",
-    "path": "folders/Paths.yy",
+    "name": "pCove",
+    "path": "folders/Paths/pCove.yy",
   },
   "points": [
     {"speed":100.0,"x":1792.0,"y":960.0,},
