@@ -3,3 +3,4 @@ event_inherited();
 xpValue = 0;
 killed = false;
 image_xscale=-1;
+increment=true;

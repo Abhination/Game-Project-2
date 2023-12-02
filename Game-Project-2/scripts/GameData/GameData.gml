@@ -288,6 +288,16 @@ function level_up(_character){
 
 function gain_xp(_character, _xp){
 	show_debug_message("XP Gained");
+	global.count+=0.5;
+	if(global.count==2)
+	{
+		with(all)
+				{
+					instance_destroy();
+				}	
+				instance_activate_all();
+				instance_destroy(global.currentEnemyObject);
+	}
 	var statSum = _character.constitution + _character.strength + _character.defense + _character.intelligence + _character.agility;
 	_character.experiencePoints += _xp;
 	if(_character.experiencePoints >= (statSum + _character.level + 5)){

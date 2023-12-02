@@ -5,6 +5,7 @@ turn=0;
 unitTurnOrder=[];
 unitRenderOrder=[];
 
+global.count=0;
 
 turnCount=0;
 roundCount=0;

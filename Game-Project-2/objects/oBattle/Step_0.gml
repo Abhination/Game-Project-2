@@ -114,7 +114,33 @@ if(cursor.active)
 			confirmDelay=0;
 		}
 	}
-	
+	show_debug_message(global.count);
+	show_debug_message(array_length(enemyUnits));
+	if(instance_exists(oBattleUnitEnemy))
+	{
+		show_debug_message("Yes");	
+	}
+	else
+	{
+		show_debug_message("No");
+	}
+	//for(i=0; i<array_length(enemyUnits);i++)
+	//{
+		//if(enemyUnits[i].image_alpha<1 )
+		//{
+		//	check++;
+		//}
+		//show_debug_message(array_length(enemyUnits));
+	//}
+	if(global.count==array_length(enemyUnits))
+	{
+		with(all)
+				{
+					instance_destroy();
+				}	
+				instance_activate_all();
+				instance_destroy(global.currentEnemyObject);
+	}
 	
 }
 

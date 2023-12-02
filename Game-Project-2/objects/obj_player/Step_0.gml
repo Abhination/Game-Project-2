@@ -1,3 +1,5 @@
+if(global.shop) exit;
+
 // Player movement
 var move_x = 0;
 var move_y = 0;
