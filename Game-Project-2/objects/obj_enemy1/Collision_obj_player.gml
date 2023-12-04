@@ -1,3 +1,3 @@
 //instance_destroy();
 
-NewEncounter([global.enemies.Enemy1,global.enemies.Enemy1], spr_roomfight);
+NewEncounter([global.enemies.BlueSlime,global.enemies.BlueSlime], spr_roomfight);

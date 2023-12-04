@@ -56,7 +56,7 @@
     {"name":"obj_water","order":8,"path":"objects/obj_water/obj_water.yy",},
     {"name":"rCrossroads","order":1,"path":"rooms/rCrossroads/rCrossroads.yy",},
     {"name":"spr_ally2_Attack","order":4,"path":"sprites/spr_ally2_Attack/spr_ally2_Attack.yy",},
-    {"name":"spr_item2","order":1,"path":"sprites/spr_item2/spr_item2.yy",},
+    {"name":"spr_MagicPotion","order":1,"path":"sprites/spr_MagicPotion/spr_MagicPotion.yy",},
     {"name":"oBattleUnitEnemy","order":2,"path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},
     {"name":"oEnemy5","order":5,"path":"objects/oEnemy5/oEnemy5.yy",},
     {"name":"obj_tavern","order":3,"path":"objects/obj_tavern/obj_tavern.yy",},

@@ -48,7 +48,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.0.98",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},},
@@ -76,7 +76,7 @@
     {"id":{"name":"obj_water","path":"objects/obj_water/obj_water.yy",},},
     {"id":{"name":"rCrossroads","path":"rooms/rCrossroads/rCrossroads.yy",},},
     {"id":{"name":"spr_ally2_Attack","path":"sprites/spr_ally2_Attack/spr_ally2_Attack.yy",},},
-    {"id":{"name":"spr_item2","path":"sprites/spr_item2/spr_item2.yy",},},
+    {"id":{"name":"spr_MagicPotion","path":"sprites/spr_MagicPotion/spr_MagicPotion.yy",},},
     {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},},
     {"id":{"name":"oBattleUnitEnemy","path":"objects/oBattleUnitEnemy/oBattleUnitEnemy.yy",},},
     {"id":{"name":"oEnemy5","path":"objects/oEnemy5/oEnemy5.yy",},},
@@ -113,7 +113,7 @@
     {"id":{"name":"spr_attackBonk","path":"sprites/spr_attackBonk/spr_attackBonk.yy",},},
     {"id":{"name":"sTrigger","path":"sprites/sTrigger/sTrigger.yy",},},
     {"id":{"name":"oEnemy1_CF2_Str","path":"objects/oEnemy1_CF2_Str/oEnemy1_CF2_Str.yy",},},
-    {"id":{"name":"spr_item1","path":"sprites/spr_item1/spr_item1.yy",},},
+    {"id":{"name":"spr_HealthPotion","path":"sprites/spr_HealthPotion/spr_HealthPotion.yy",},},
     {"id":{"name":"spr_ally1_Idle","path":"sprites/spr_ally1_Idle/spr_ally1_Idle.yy",},},
     {"id":{"name":"spr_roomcolor","path":"sprites/spr_roomcolor/spr_roomcolor.yy",},},
     {"id":{"name":"obj_merchant","path":"objects/obj_merchant/obj_merchant.yy",},},

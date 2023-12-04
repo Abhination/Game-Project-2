@@ -29,11 +29,11 @@ if(shopOpen)
 	var item = arr[0];
 	var price = arr[1];
 	
-	if (keyboard_check_pressed(vk_enter) && global.gold >= price) {
+	if (keyboard_check_pressed(vk_enter) && global.player.gold >= price) {
 		//Add to inventory
-		ds_list_add(global.inv, item);
-		
+		ds_list_add(global.inventory, item);
+		updateActions();
 		//Reduce money
-		global.gold -= price;
+		global.player.gold -= price;
 	}
 }
