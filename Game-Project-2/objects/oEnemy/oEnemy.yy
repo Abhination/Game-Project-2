@@ -1,15 +1,13 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "oEnemy1_CF2_StrM",
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
-  ],
+  "name": "oEnemy",
+  "eventList": [],
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Cove F2 Enemies",
-    "path": "folders/Objects/Cove Enemies/Cove F2 Enemies.yy",
+    "name": "Cove Enemies",
+    "path": "folders/Objects/Cove Enemies.yy",
   },
   "parentObjectId": {
     "name": "obj_enemy1",
