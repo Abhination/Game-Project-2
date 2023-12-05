@@ -4,15 +4,15 @@ global.shop=false;
 selected=0;
 selectedAnim = 0;
 
-items= global.itemLibrary;
+global.items= ds_list_create();//global.itemLibrary;
 
-//ds_list_add(items, ["item1", 10, "Health1"]);
-//ds_list_add(items, ["item2", 20, "Health2"]);
-//ds_list_add(items, ["item3", 30, "Health3"]);
-//ds_list_add(items, ["item4", 40, "Health4"]);
-//ds_list_add(items, ["item5", 50, "Health5"]);
+ds_list_add(global.items, ["item1", 10, "Health1"]);
+ds_list_add(global.items, ["item2", 20, "Health2"]);
+ds_list_add(global.items, ["item3", 30, "Health3"]);
+ds_list_add(global.items, ["item4", 40, "Health4"]);
+ds_list_add(global.items, ["item5", 50, "Health5"]);
 
-itemCount=ds_list_size(items);
+itemCount=ds_list_size(global.items);
 
 //GUI
 guiWidth=display_get_gui_width();

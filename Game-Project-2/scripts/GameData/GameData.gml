@@ -154,8 +154,8 @@ global.actionLibrary =
 }
 
 global.itemLibrary = ds_list_create();
-ds_list_add(global.itemLibrary, ["HealthPotion", 15, "itemDescription"]);
-ds_list_add(global.itemLibrary, ["MagicPotion", 15, "itemDescription"]);
+ds_list_add(global.itemLibrary, ["HealthPotion", 15, "itemDescription", 0]);
+ds_list_add(global.itemLibrary, ["MagicPotion", 15, "itemDescription", 0]);
 //ds_list_add(global.itemLibrary, ["Health Potion", 15, "itemDescription"]);
 //ds_list_add(global.itemLibrary, ["Health Potion", 15, "itemDescription"]);
 //ds_list_add(global.itemLibrary, ["Health Potion", 15, "itemDescription"]);
@@ -202,7 +202,7 @@ global.player = {
 }
 
 
-global.inventory = ds_list_create();
+
 
 global.allies = {
 	GuardianEric: {
@@ -645,7 +645,7 @@ function level_up(_character){
 function gain_xp(_character, _xp){
 	show_debug_message("XP Gained");
 	global.count+=0.5;
-	if(global.count==2)
+	if(global.count==global.noof)
 	{
 		with(all)
 				{

@@ -57,3 +57,5 @@ if(keyboard_check_pressed(ord("E")))
 		myTextbox=noone;
 	}
 }
+
+//show_debug_message(global.inv);

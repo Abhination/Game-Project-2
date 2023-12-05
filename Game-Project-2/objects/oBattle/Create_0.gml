@@ -39,7 +39,7 @@ for(var i=0; i<array_length(enemies); i++)
 	array_push(units, enemyUnits[i]);
 	enemyUnits[i].xpValue = enemies[i].xpValue;
 }
-
+global.noof=(array_length(enemies));
 //make allies
 for(var i=0; i<array_length(global.party); i++)
 {

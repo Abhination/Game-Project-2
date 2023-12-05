@@ -11,11 +11,13 @@ draw_set_color(c_black);
 draw_set_color(c_white);
 
 //Draw menu items
-for(var i=0; i<itemCount; i++){
+for(var i=0; i<itemCount1; i++){
 	//Get item
 	var arr = global.items[| i];
+	
 	var item = arr[0];
 	
+	//show_debug_message(item);
 	//Draw position
 	var _x = menuMargin + menuWidth/2;
 	var _y = (guiHeight/2) + (i-selectedAnim)*32;
@@ -25,7 +27,7 @@ for(var i=0; i<itemCount; i++){
 	if (i==selected) s = 1.4;
 	
 	//Selected item name
-	if (i==selected) item = "> " + item + " <";
+	if (i==selected) item = "> " + item + " < "+ "quantity" + string(global.inv[selected]);
 	
 	//Draw
 	draw_set_halign(fa_center);
