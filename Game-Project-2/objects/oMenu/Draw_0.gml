@@ -35,5 +35,5 @@ for (l=0; l<(visibleOptionsMax+_desc);l++)
 draw_sprite(spr_pointer,0, 615+x+xmargin+8,305+y+ymargin+((hover-_scrollPush)*heightLine)+7);
 if(visibleOptionsMax<array_length(options))&&(hover<array_length(options)-1)
 {
-	draw_sprite(spr_DownArrow,0,650+x+widthFull*0.5,325+y+heightFull-7);
+	draw_sprite(spr_DownArrow,0,550+x+widthFull*0.5,280+y+heightFull);
 }
