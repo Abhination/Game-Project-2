@@ -11,26 +11,28 @@ for(var i=0; i< array_length(unitRenderOrder);i++)
 }
 
 //draw ui boxes
-draw_sprite_stretched(spr_box,0,x+500,y+570,1420,450);
-draw_sprite_stretched(spr_box,0,x,y+570,500,450);
+draw_sprite_stretched(spr_box,0,x,y+700,1000,350); //Ally Info
+draw_sprite_stretched(spr_box,0,x+700,y+700,675,350); //Enemy Info
 
 //Positions
-#macro COLUMN_ENEMY 15
-#macro COLUMN_NAME 90
-#macro COLUMN_HP 160
-#macro COLUMN_MP 220
+#macro COLUMN_ENEMY 750
+#macro COLUMN_ENEMY_HP 1200
+#macro COLUMN_NAME 50
+#macro COLUMN_HP 275
+#macro COLUMN_MP 525
 
 //Draw Headings
 draw_set_font(fnt_text_24);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_gray);
-draw_text(x+COLUMN_ENEMY+50,y+120+480,"ENEMY");
-draw_text(x+COLUMN_NAME+550,y+120+480,"NAME");
-draw_text(x+COLUMN_HP+900,y+120+480,"HP");
-draw_text(x+COLUMN_MP+1250,y+120+480,"MP");
+draw_text(x+COLUMN_ENEMY,y+120+580,"ENEMY");
+draw_text(x+COLUMN_ENEMY_HP,y+120+580,"HP");
+draw_text(x+COLUMN_NAME,y+120+580,"NAME");
+draw_text(x+COLUMN_HP,y+120+580,"HP");
+draw_text(x+COLUMN_MP,y+120+580,"MP");
 
-//Draw Enemy Names
+//Draw Enemy Names And HP
 draw_set_font(fnt_text_24);
 draw_set_halign(fa_left);
 draw_set_valign(fa_top);
@@ -46,9 +48,16 @@ for( var i=0; (i<array_length(enemyUnits)) && (_drawn< _drawLimit); i++)
 		draw_set_halign(fa_left);
 		draw_set_color(c_white);
 		if(_char.id==_unitWithCurrentTurn) draw_set_color(c_yellow);
-		draw_text(x+COLUMN_ENEMY+50,y+150+(i*52)+500,_char.name);
+		draw_text(x+COLUMN_ENEMY,y+150+(i*52)+600,_char.name);
 	}
 	
+	if(_char.hp>0)
+	{
+	draw_set_color(c_white);
+	if(_char.hp<(_char.hpMax*0.5)) draw_set_color(c_orange);
+	if(_char.hp<=0) draw_set_color(c_red);
+	draw_text(x+COLUMN_ENEMY_HP,y+150+(i*52)+600,string(_char.hp)+"/"+string(_char.hpMax));
+	}
 }
 
 
@@ -60,18 +69,18 @@ for( var i=0; (i<array_length(partyUnits)); i++)
 	var _char=partyUnits[i];
 	if(_char.id==_unitWithCurrentTurn) draw_set_color(c_yellow);
 	if(_char.hp<=0) draw_set_color(c_red);
-	draw_text(x+COLUMN_NAME+550,y+150+(i*52)+500,_char.name);
+	draw_text(x+COLUMN_NAME,y+150+(i*52)+600,_char.name);
 	draw_set_halign(fa_right);
 	
 	draw_set_color(c_white);
 	if(_char.hp<(_char.hpMax*0.5)) draw_set_color(c_orange);
 	if(_char.hp<=0) draw_set_color(c_red);
-	draw_text(x+COLUMN_HP+900,y+150+(i*52)+500,string(_char.hp)+"/"+string(_char.hpMax));
+	draw_text(x+COLUMN_HP+125,y+150+(i*52)+600,string(_char.hp)+"/"+string(_char.hpMax));
 
 	draw_set_color(c_white);
 	if(_char.mp<(_char.mpMax*0.5)) draw_set_color(c_orange);
 	if(_char.mp<=0) draw_set_color(c_red);
-	draw_text(x+COLUMN_MP+1250,y+150+(i*52)+500,string(_char.mp)+"/"+string(_char.mpMax));
+	draw_text(x+COLUMN_MP+125,y+150+(i*52)+600,string(_char.mp)+"/"+string(_char.mpMax));
 	
 	draw_set_color(c_white);
 }

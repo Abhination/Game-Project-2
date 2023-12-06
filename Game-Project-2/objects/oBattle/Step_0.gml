@@ -107,7 +107,7 @@ if(cursor.active)
 		}
 		
 		//Cancel & return to menu
-		if(_keyCancel) && (_keyConfirm)
+		if(_keyCancel) 
 		{
 			with(oMenu) active=true;
 			active =false;

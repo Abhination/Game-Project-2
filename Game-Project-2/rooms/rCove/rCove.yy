@@ -41,6 +41,7 @@
     {"name":"inst_1FCE59F1","path":"rooms/rCove/rCove.yy",},
     {"name":"inst_48E02662","path":"rooms/rCove/rCove.yy",},
     {"name":"inst_110ED2D0","path":"rooms/rCove/rCove.yy",},
+    {"name":"inst_732981E1","path":"rooms/rCove/rCove.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -119,6 +120,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"pathSpeed","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"2",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"pathStay","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"false",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1824.0,"y":960.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_732981E1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemyType3","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"global.enemies.DemonKing",},
+          ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1632.0,"y":192.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRBackgroundLayer","resourceVersion":"1.0","name":"Background","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":700,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.0,"htiled":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"spriteId":{"name":"spr_grass","path":"sprites/spr_grass/spr_grass.yy",},"stretch":true,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.0,"vtiled":false,"x":0,"y":0,},
   ],
