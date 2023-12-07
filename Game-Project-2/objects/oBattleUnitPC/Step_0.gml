@@ -2,6 +2,7 @@ event_inherited();
 if(hp<=0)
 {
 	sprite_index=sprites.down;
+	
 }
 else
 {

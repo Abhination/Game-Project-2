@@ -1,6 +1,6 @@
 /// @description 
 if (!shopOpen) exit;
-
+draw_text_transformed(900, 100, "Inventory", 5, 5, 0);
 //Draw back rectangles
 draw_set_color(c_black);
 	draw_set_alpha(0.8);

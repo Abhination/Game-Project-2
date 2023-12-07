@@ -39,5 +39,6 @@ if(shopOpen)
 		global.inv[selected]+=1;
 		show_debug_message(global.inv);
 		global.player.gold -= price;
+		updateActions();
 	}
 }

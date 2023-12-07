@@ -118,11 +118,7 @@ global.actionLibrary =
 			updateActions();
 			var _amount = _user.hpMax * 0.5;
 			BattleChangeHP(_user, _amount);
-			for(var i = 0; i < ds_list_size(global.inventory)){
-				if( ds_list_find_value(global.inventory, i)[0] == "HealthPotion"){
-					ds_list_delete(global.inventory, i);
-				}
-			}
+			global.inv[0]--;
 			updateActions();
 		}
 	}
@@ -143,25 +139,18 @@ global.actionLibrary =
 			updateActions();
 			var _amount = _user.mpMax * 0.5;
 			_user.mp = min(_user.mpMax, _user.mp+_amount);
-			for(var i = 0; i < ds_list_size(global.inventory)){
-				if(ds_list_find_value(global.inventory, i)[0] == "MagicPotion"){
-					ds_list_delete(global.inventory, i);
-				}
-			}
+			global.inv[1]--;
 			updateActions();
 		}
 	}
 }
 
-global.itemLibrary = ds_list_create();
-ds_list_add(global.itemLibrary, ["HealthPotion", 15, "itemDescription", 0]);
-ds_list_add(global.itemLibrary, ["MagicPotion", 15, "itemDescription", 0]);
-//ds_list_add(global.itemLibrary, ["Health Potion", 15, "itemDescription"]);
-//ds_list_add(global.itemLibrary, ["Health Potion", 15, "itemDescription"]);
-//ds_list_add(global.itemLibrary, ["Health Potion", 15, "itemDescription"]);
-
-global.healthPotion = ["HealthPotion", 15, "itemDescription"];
-global.magicPotion = ["MagicPotion", 15, "itemDescription"];
+global.items= ds_list_create();
+ds_list_add(global.items, ["item1", 10, "Health1"]);
+ds_list_add(global.items, ["item2", 20, "Health2"]);
+ds_list_add(global.items, ["item3", 30, "Health3"]);
+ds_list_add(global.items, ["item4", 40, "Health4"]);
+ds_list_add(global.items, ["item5", 50, "Health5"]);
 
 enum MODE
 {
@@ -181,6 +170,7 @@ enum CLASS {
 	HEALER = 6
 }
 
+global.inv=[0,0,0,0,0];
 
 global.player = {
 	name: "Player",
@@ -200,9 +190,6 @@ global.player = {
 	sprites: {idle: spr_ally1_Idle, attack: spr_ally1_Attack, defend: spr_ally1_Defend, down: spr_ally1_Down},
 	actions: [global.actionLibrary.attack, global.actionLibrary.flee]
 }
-
-
-
 
 global.allies = {
 	GuardianEric: {
@@ -316,7 +303,6 @@ global.allies = {
 
 global.party = [global.player, global.allies.HealerThea, noone, noone];
 
-//Enemy Data
 global.enemies =
 {
 	Slime:
@@ -332,6 +318,22 @@ global.enemies =
 		defense: 5,
 		intelligence: 1,
 		agility: 5,
+		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		actions: [global.actionLibrary.attack],
+		xpValue : 15,
+		AIscript : function()
+		{
+			//attack random party member
+			
+			var _action = actions[0];
+			var _possibleTargets=array_filter(oBattle.partyUnits, function(_unit,_index)
+			{
+				return(_unit.hp>0);
+			});
+			
+			var _target=_possibleTargets[irandom(array_length(_possibleTargets)-1)];
+			return [_action,_target];
+		}
 	}
 	,
 	BlueSlime: 
@@ -353,12 +355,17 @@ global.enemies =
 		AIscript : function()
 		{
 			//attack random party member
+			
+			
+			
 			var _action = actions[0];
 			var _possibleTargets=array_filter(oBattle.partyUnits, function(_unit,_index)
 			{
 				return(_unit.hp>0);
 			});
+			
 			var _target=_possibleTargets[irandom(array_length(_possibleTargets)-1)];
+		
 			return [_action,_target];
 		}
 	}
@@ -590,7 +597,9 @@ global.enemies =
 			{
 				return(_unit.hp>0);
 			});
+			
 			var _target=_possibleTargets[irandom(array_length(_possibleTargets)-1)];
+			
 			return [_action,_target];
 		}
 	}
@@ -663,31 +672,24 @@ function gain_xp(_character, _xp){
 }
 
 function updateActions(){
+	
 	var hasHPPotion = false;
 	var hasMPPotion = false;
 	var HPActionThere = false;
 	var MPActionThere = false;
-	/*
-	for( var i = 0; i < ds_list_size(global.inventory); i++){
-		var ITEM = ds_list_find_value(global.inventory, i);
-		if(array_equals(ITEM, global.healthPotion)){
-			hasHPPotion = true;
-		}
-		else if(array_equals(ITEM, global.magicPotion)){
-			hasMPPotion = true;
-		}
-	}*/
 	
+	//Check for items
+	if(global.inv[0] > 0){
+		hasHPPotion = true;
+	}
+	else if(global.inv[1] > 0){
+		hasMPPotion = true;
+	}
+	
+	//Check for actions in party
 	for(var i = 0; i < array_length(global.party); i++){
 		if(global.party[i] != noone){
-			for(var j = 0; j < array_length(global.party[i].actions)-1; j++){
-				
-				if(global.party[i].actions[j].name == global.actionLibrary.hp_potion.name and hasHPPotion == false){
-					array_delete(global.party[i].actions, j, 1);
-				}
-				if(global.party[i].actions[j].name == global.actionLibrary.mp_potion.name and hasMPPotion == false){
-					array_delete(global.party[i].actions, j, 1);
-				}
+			for(var j = 0; j < array_length(global.party[i].actions); j++){
 				if(global.party[i].actions[j].name  == global.actionLibrary.hp_potion.name){
 					HPActionThere = true;
 				}
@@ -698,15 +700,43 @@ function updateActions(){
 		}
 		
 	}
+		
+		
+		
+	if(HPActionThere and !hasHPPotion){
+		for(var i = 0; i < array_length(global.party); i++){
+			if(global.party[i] != noone){
+				for(var j = 0; j < array_length(global.party[i].actions); j++){
+					if(global.party[i].actions[j].name == global.actionLibrary.hp_potion.name){
+						array_delete(global.party[i].actions, j, 1);
+					}
+				}
+			}
+		}
+	}
 	
-	if(HPActionThere == false and hasHPPotion == true){
+	if(MPActionThere and !hasMPPotion){
+		for(var i = 0; i < array_length(global.party); i++){
+			if(global.party[i] != noone){
+				for(var j = 0; j < array_length(global.party[i].actions); j++){
+					if(global.party[i].actions[j].name == global.actionLibrary.mp_potion.name){
+						array_delete(global.party[i].actions, j, 1);
+					}
+				}
+			}
+		}
+	}
+		
+		
+	if(!HPActionThere and hasHPPotion){
 		for(var i = 0; i < array_length(global.party); i++){
 			if(global.party[i] != noone){
 				array_push(global.party[i].actions, global.actionLibrary.hp_potion);
 			}
 		}
 	}
-	if(MPActionThere == false and hasMPPotion == true){
+	
+	if(!MPActionThere and hasMPPotion){
 		for(var i = 0; i < array_length(global.party); i++){
 			if(global.party[i] != noone){
 				array_push(global.party[i].actions, global.actionLibrary.mp_potion);

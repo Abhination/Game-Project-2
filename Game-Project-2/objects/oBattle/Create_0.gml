@@ -68,6 +68,7 @@ RefreshRenderOrder();
 
 function BattleStateSelectAction()
 {
+	
 	if(!instance_exists(oMenu))
 	{
 		//get current unit
@@ -137,8 +138,9 @@ function BattleStateSelectAction()
 		}
 		else
 		{
-			//unit ai script
+			//unit ai script	
 			var _enemyAction=_unit.AIscript();
+			
 			if(_enemyAction != -1) BeginAction(_unit.id, _enemyAction[0], _enemyAction[1]);
 		}
 	}
@@ -214,6 +216,17 @@ function BattleStatePerformAction()
 
 function BattleStateVictoryCheck()
 {
+	var teamAlive = false;
+	for(var i = 0; i < array_length(partyUnits); i++){
+		if(partyUnits[i].sprite_index != global.party[i].sprites.down){
+			teamAlive = true;
+		}
+	}
+	if(teamAlive == false){
+		room_goto(rGameover);
+	}
+	
+	
 	battleState=BattleStateTurnProgression;
 }
 

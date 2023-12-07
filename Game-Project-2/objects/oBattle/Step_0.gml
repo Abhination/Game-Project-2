@@ -27,7 +27,7 @@ if(cursor.active)
 		var _moveV=_keyDown-_keyUp;
 		
 		if(_moveH==-1) targetSide=oBattle.partyUnits;
-		if(_moveH==1) targetSide=oBattle.partyUnits;	
+		if(_moveH==1) targetSide=oBattle.enemyUnits;	
 		
 		//verify target list
 		if(targetSide==oBattle.enemyUnits)
