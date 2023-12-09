@@ -38,7 +38,7 @@ for(var i = 0; i < 4; i++){
 		
 		partyInfo[i][1] = string_concat("LVL ", global.party[i].level)
 		var statSum = global.party[i].constitution + global.party[i].strength + global.party[i].defense + global.party[i].intelligence + global.party[i].agility;
-		partyInfo[i][2] = string_concat("XP to Next LVL: ", (statSum + global.party[i].level + 5) - global.party[i].experiencePoints)
+		partyInfo[i][2] = string_concat("XP to Next LVL: ", abs((statSum + global.party[i].level + 5) - global.party[i].experiencePoints))
 		partyInfo[i][3] = string_concat("Constitution: ", global.party[i].constitution)
 		partyInfo[i][4] = string_concat("Strength: ", global.party[i].strength)
 		partyInfo[i][5] = string_concat("Defense: ", global.party[i].defense)
