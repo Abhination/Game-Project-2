@@ -146,11 +146,8 @@ global.actionLibrary =
 }
 
 global.items= ds_list_create();
-ds_list_add(global.items, ["item1", 10, "Health1"]);
-ds_list_add(global.items, ["item2", 20, "Health2"]);
-ds_list_add(global.items, ["item3", 30, "Health3"]);
-ds_list_add(global.items, ["item4", 40, "Health4"]);
-ds_list_add(global.items, ["item5", 50, "Health5"]);
+ds_list_add(global.items, ["Health Potion", 10, "Use in battle to heal 50% of your health!"]);
+ds_list_add(global.items, ["Magic Potion", 20, "Use in battle to recover 50% of your magic!"]);
 
 enum MODE
 {
@@ -578,14 +575,14 @@ global.enemies =
 		name: "Demon King Eidolon",
 		level: 1,
 		hp: 200,
-		hpMax: 150,
+		hpMax: 200,
 		mp: 150,
 		mpMax: 150,
 		constitution: 20,
 		strength: 15,
-		defense: 10,
+		defense: 15,
 		intelligence: 15,
-		agility: 10,
+		agility: 15,
 		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
@@ -653,7 +650,15 @@ function level_up(_character){
 
 function gain_xp(_character, _xp){
 	show_debug_message("XP Gained");
-	global.count+=0.5;
+	var pmn = 0;
+	
+	for(var i = 0; i < array_length(global.party); i++){
+		if(global.party[i] != noone){
+			pmn++;
+		}
+	}
+	global.count+=(1/pmn);
+	
 	if(global.count==global.noof)
 	{
 		with(all)

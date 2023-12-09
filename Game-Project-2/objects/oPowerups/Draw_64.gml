@@ -27,7 +27,7 @@ for(var i=0; i<itemCount1; i++){
 	if (i==selected) s = 1.4;
 	
 	//Selected item name
-	if (i==selected) item = "> " + item + " < "+ "quantity" + string(global.inv[selected]);
+	if (i==selected) item = "> " + item + " < "+ "x" + string(global.inv[selected]);
 	
 	//Draw
 	draw_set_halign(fa_center);
