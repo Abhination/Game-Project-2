@@ -18,24 +18,25 @@ var right_key = keyboard_check(ord("D"));
 		
 if (up_key)
     {
-		image_yscale=1;
+		
         move_y -= movement_speed; // Move upward
     }
 if (down_key)
     {
+		
         move_y += movement_speed; // Move downward
     }
 if (left_key)
     {
-			//image_angle=0;
+		
         move_x -= movement_speed; // Move left
-		image_xscale = -1;
+		
     }
 if (right_key)
     {
-		//image_angle=0;
+		
         move_x += movement_speed; // Move right
-        image_xscale = 1; // Set the sprite to its original direction when moving right
+        
     }
 		
 // Update the bee's position
