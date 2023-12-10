@@ -13,13 +13,13 @@ else if(shopOpen && keyboard_check_pressed(vk_escape))
 if(shopOpen)
 {
 	//show_debug_message(global.items);
-	if(keyboard_check_pressed(vk_down))
+	if(keyboard_check_pressed(ord("S")))
 	{
 		selected++;
 		if(selected==itemCount1) selected=0;
 	}
 	
-	if(keyboard_check_pressed(vk_up))
+	if(keyboard_check_pressed(ord("W")))
 	{
 		selected--;
 		if(selected<0) selected=itemCount1-1;
@@ -31,14 +31,14 @@ if(shopOpen)
 	var price = arr[1];
 	var quantity = global.inv[selected];
 	
-	if (keyboard_check_pressed(vk_enter) && global.inv[selected]>0) {
+	if (keyboard_check_pressed(ord("Z")) && global.inv[selected]>0) {
 		//Add to inventory
 		//ds_list_add(global.inventory, item);
 		//updateActions();
 		//Reduce money
 		//show_debug_message(selected);
 		//show_debug_message(global.inv[selected]);
-		global.inv[selected]-=1;
+		//global.inv[selected]-=1;
 		show_debug_message(global.inv);
 		//global.player.gold -= price;
 	}

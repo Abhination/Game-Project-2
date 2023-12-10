@@ -1,4 +1,4 @@
-/*myTextbox=noone;
+myTextbox=noone;
 
 
 myText[0]="Welcome to the tavern!";

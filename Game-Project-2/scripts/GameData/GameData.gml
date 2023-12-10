@@ -430,7 +430,7 @@ global.enemies =
 		name: "Giant Crab",
 		level: 1,
 		hp: 100,
-		hpMax: 30,
+		hpMax: 100,
 		mp: 30,
 		mpMax: 30,
 		constitution: 10,

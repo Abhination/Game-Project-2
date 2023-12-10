@@ -29,7 +29,7 @@ if(shopOpen)
 	var item = arr[0];
 	var price = arr[1];
 	
-	if (keyboard_check_pressed(vk_enter) && global.player.gold >= price) {
+	if (keyboard_check_pressed(ord("Z")) && global.player.gold >= price) {
 		//Add to inventory
 		//ds_list_add(global.inventory, item);
 		//updateActions();

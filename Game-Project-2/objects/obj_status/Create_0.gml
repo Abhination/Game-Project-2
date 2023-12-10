@@ -5,8 +5,8 @@ xBuffer = 257;
 yBuffer = 33;
 
 image_alpha = 1
-x = (room_width/2)-512
-y = (room_height/2)-256
+x = (display_get_gui_width()/2)-512
+y = (display_get_gui_height()/2)-256
 
 party_size = 0;
 
