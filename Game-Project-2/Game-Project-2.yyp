@@ -51,7 +51,7 @@
   "isEcma": false,
   "LibraryEmitters": [],
   "MetaData": {
-    "IDEVersion": "2023.8.0.98",
+    "IDEVersion": "2023.8.2.108",
   },
   "resources": [
     {"id":{"name":"sWalls","path":"sprites/sWalls/sWalls.yy",},},
@@ -66,6 +66,7 @@
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},},
     {"id":{"name":"spr_item3","path":"sprites/spr_item3/spr_item3.yy",},},
     {"id":{"name":"obj_signCove","path":"objects/obj_signCove/obj_signCove.yy",},},
+    {"id":{"name":"obj_finalBoss","path":"objects/obj_finalBoss/obj_finalBoss.yy",},},
     {"id":{"name":"sBlacksmith","path":"sprites/sBlacksmith/sBlacksmith.yy",},},
     {"id":{"name":"sSlimeGreen","path":"sprites/sSlimeGreen/sSlimeGreen.yy",},},
     {"id":{"name":"spr_item5","path":"sprites/spr_item5/spr_item5.yy",},},
@@ -163,6 +164,7 @@
     {"id":{"name":"sSlimeBrownHit","path":"sprites/sSlimeBrownHit/sSlimeBrownHit.yy",},},
     {"id":{"name":"spr_wall","path":"sprites/spr_wall/spr_wall.yy",},},
     {"id":{"name":"spr_player_LRight","path":"sprites/spr_player_LRight/spr_player_LRight.yy",},},
+    {"id":{"name":"oGeneral","path":"objects/oGeneral/oGeneral.yy",},},
     {"id":{"name":"sAries","path":"sprites/sAries/sAries.yy",},},
     {"id":{"name":"spr_attackIce","path":"sprites/spr_attackIce/spr_attackIce.yy",},},
     {"id":{"name":"sprTown","path":"sprites/sprTown/sprTown.yy",},},

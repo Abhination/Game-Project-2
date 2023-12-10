@@ -71,6 +71,6 @@ draw_set_valign(fa_bottom);
 	draw_text(menuMargin + menuWidth + 4, guiHeight-4, "Price: " + string(price));
 	
 	draw_set_halign(fa_right);
-		draw_text(guiWidth-4, guiHeight-4, "Hit ENTER to buy");
+		draw_text(guiWidth-4, guiHeight-4, "Hit Z to buy");
 	draw_set_halign(fa_left);
 draw_set_valign(fa_top);

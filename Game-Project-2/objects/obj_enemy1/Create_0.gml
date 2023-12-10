@@ -10,3 +10,4 @@ global.enemyType2 = enemyType2;
 global.enemyType3 = enemyType3;
 global.enemySprite = enemySprite;
 sprite_index = enemySprite;
+

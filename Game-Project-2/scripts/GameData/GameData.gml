@@ -1,4 +1,5 @@
 //Action Library
+global.demonLordCounter = 0;
 global.actionLibrary =
 {
 	attack :

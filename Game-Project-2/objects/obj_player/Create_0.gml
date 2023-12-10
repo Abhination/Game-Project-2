@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
-instance_create_layer()
+
+
 instance_create_layer(x, y, "Instances", oPowerups);
 
 myTextbox=noone;
@@ -16,3 +17,4 @@ if (variable_global_exists("targetX")) && (global.targetX != -1)
 
 global.shop=false;
 global.inventory =ds_list_create();
+

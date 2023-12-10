@@ -80,4 +80,27 @@ if(keyboard_check_pressed(ord("E")))
 	}
 }
 
+if (global.demonLordCounter == 3) {
+	instance_create_layer(1727,1011,"Instances",obj_finalBoss);
+}
+
+//Moves Party Members Back
+for(var i = 1; i < 3; i++){
+    if(global.party[i] == noone && global.party[i+1] != noone){
+        global.party[i] = global.party[i+1];
+        global.party[i+1] = noone;
+    }
+}
+
+if(keyboard_check_pressed(ord("V"))){
+    room_goto(rVillage);
+}
+
+if(keyboard_check_pressed(ord("G"))){
+    global.player.gold = 9999;
+}
+
+if(keyboard_check_pressed(ord("X"))){
+    gainxp(global.player, 999);
+}
 //show_debug_message(global.inv);
