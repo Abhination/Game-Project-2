@@ -96,6 +96,10 @@ if(keyboard_check_pressed(ord("V"))){
     room_goto(rVillage);
 }
 
+if(keyboard_check_pressed(ord("L"))){
+    room_goto(rGamewon);
+}
+
 if(keyboard_check_pressed(ord("G"))){
     global.player.gold = 9999;
 }

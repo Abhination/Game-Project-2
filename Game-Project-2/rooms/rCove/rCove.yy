@@ -40,9 +40,9 @@
     {"name":"inst_1FCE59F1","path":"rooms/rCove/rCove.yy",},
     {"name":"inst_48E02662","path":"rooms/rCove/rCove.yy",},
     {"name":"inst_110ED2D0","path":"rooms/rCove/rCove.yy",},
-    {"name":"inst_4989E957","path":"rooms/rCove/rCove.yy",},
     {"name":"inst_63B52086","path":"rooms/rCove/rCove.yy",},
     {"name":"inst_14FE5BD9","path":"rooms/rCove/rCove.yy",},
+    {"name":"inst_30D75ADF","path":"rooms/rCove/rCove.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -184,7 +184,6 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemySprite","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"sSlimeBlue",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemyType","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"global.enemies.Slime",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1824.0,"y":960.0,},
-        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_4989E957","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"obj_merchant","path":"objects/obj_merchant/obj_merchant.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1824.0,"y":256.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_63B52086","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oEnemy","path":"objects/oEnemy/oEnemy.yy",},"properties":[
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemySprite","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"sGiantCrab",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemyType3","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"global.enemies.GiantCrab",},
@@ -195,6 +194,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemyType2","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"global.enemies.GiantCrab",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"obj_enemy1","path":"objects/obj_enemy1/obj_enemy1.yy",},"propertyId":{"name":"enemyType3","path":"objects/obj_enemy1/obj_enemy1.yy",},"value":"global.enemies.GiantCrab",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1760.0,"y":704.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_30D75ADF","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oShop","path":"objects/oShop/oShop.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":1792.0,"y":256.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Water_edge","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
 -1002,-2147483648,-54,0,-66,-2147483648,-54,0,-66,-2147483648,8,8758,8759,8760,8761,8762,8763,8764,8765,-112,-2147483648,3,8860,8861,8862,-117,-2147483648,3,8656,8657,8658,-117,-2147483648,3,8758,8759,8760,-117,-2147483648,3,8860,8861,8862,-117,-2147483648,3,8962,8963,8964,-117,-2147483648,3,9064,9065,9066,-117,-2147483648,3,9166,9167,9168,-117,-2147483648,3,8758,8759,9270,-117,-2147483648,3,8860,8861,9372,-117,-2147483648,3,8962,8963,9474,-477,-2147483648,2,8860,8861,-52,-2147483648,1,8868,-65,-2147483648,2,8962,8963,-52,-2147483648,1,8970,-65,-2147483648,2,8860,8861,-52,-2147483648,1,9072,-65,-2147483648,2,8962,8963,-52,-2147483648,1,9174,-65,-2147483648,2,9064,9065,
