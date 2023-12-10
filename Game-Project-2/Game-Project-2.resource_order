@@ -44,6 +44,7 @@
     {"name":"spr_pointer","order":2,"path":"sprites/spr_pointer/spr_pointer.yy",},
     {"name":"spr_player_Idling","order":7,"path":"sprites/spr_player_Idling/spr_player_Idling.yy",},
     {"name":"obj_signForest","order":1,"path":"objects/obj_signForest/obj_signForest.yy",},
+    {"name":"oTitleScreen","order":15,"path":"objects/oTitleScreen/oTitleScreen.yy",},
     {"name":"rCove","order":2,"path":"rooms/rCove/rCove.yy",},
     {"name":"spr_item3","order":2,"path":"sprites/spr_item3/spr_item3.yy",},
     {"name":"obj_finalBoss","order":13,"path":"objects/obj_finalBoss/obj_finalBoss.yy",},
