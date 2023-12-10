@@ -121,6 +121,7 @@
     {"id":{"name":"pEnemyPathS","path":"paths/pEnemyPathS/pEnemyPathS.yy",},},
     {"id":{"name":"spr_ally_Thea","path":"sprites/spr_ally_Thea/spr_ally_Thea.yy",},},
     {"id":{"name":"BattleFunctions","path":"scripts/BattleFunctions/BattleFunctions.yy",},},
+    {"id":{"name":"rTitleMenu","path":"rooms/rTitleMenu/rTitleMenu.yy",},},
     {"id":{"name":"oBattleEffect","path":"objects/oBattleEffect/oBattleEffect.yy",},},
     {"id":{"name":"rCoveF2","path":"rooms/rCoveF2/rCoveF2.yy",},},
     {"id":{"name":"oGame","path":"objects/oGame/oGame.yy",},},
@@ -185,6 +186,7 @@
     {"roomId":{"name":"rCoveF2","path":"rooms/rCoveF2/rCoveF2.yy",},},
     {"roomId":{"name":"rGameover","path":"rooms/rGameover/rGameover.yy",},},
     {"roomId":{"name":"rGamewon","path":"rooms/rGamewon/rGamewon.yy",},},
+    {"roomId":{"name":"rTitleMenu","path":"rooms/rTitleMenu/rTitleMenu.yy",},},
   ],
   "templateType": "game",
   "TextureGroups": [

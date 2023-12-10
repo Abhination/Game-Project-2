@@ -101,6 +101,6 @@ if(keyboard_check_pressed(ord("G"))){
 }
 
 if(keyboard_check_pressed(ord("X"))){
-    gainxp(global.player, 999);
+    gain_xp(global.player, 999);
 }
 //show_debug_message(global.inv);

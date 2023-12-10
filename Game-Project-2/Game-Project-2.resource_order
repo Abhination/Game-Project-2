@@ -93,6 +93,7 @@
     {"name":"pEnemyPathS","order":3,"path":"paths/pEnemyPathS/pEnemyPathS.yy",},
     {"name":"spr_ally_Thea","order":8,"path":"sprites/spr_ally_Thea/spr_ally_Thea.yy",},
     {"name":"BattleFunctions","order":1,"path":"scripts/BattleFunctions/BattleFunctions.yy",},
+    {"name":"rTitleMenu","order":6,"path":"rooms/rTitleMenu/rTitleMenu.yy",},
     {"name":"oBattleEffect","order":4,"path":"objects/oBattleEffect/oBattleEffect.yy",},
     {"name":"rCoveF2","order":3,"path":"rooms/rCoveF2/rCoveF2.yy",},
     {"name":"spr_item4","order":3,"path":"sprites/spr_item4/spr_item4.yy",},

@@ -1,5 +1,7 @@
 //Action Library
 global.demonLordCounter = 0;
+global.count = 0;
+global.noof = 0;
 global.actionLibrary =
 {
 	attack :
@@ -318,7 +320,7 @@ global.enemies =
 		agility: 5,
 		sprites: { idle: sSlimeGreen, attack: sSlimeGreenHit},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 30,
 		AIscript : function()
 		{
 			//attack random party member
@@ -349,7 +351,7 @@ global.enemies =
 		agility: 5,
 		sprites: { idle: sSlimeBlue, attack: sSlimeBlueHit},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 30,
 		AIscript : function()
 		{
 			//attack random party member
@@ -383,7 +385,7 @@ global.enemies =
 		agility: 5,
 		sprites: { idle: sSlimeRed, attack: sSlimeRedHit},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 30,
 		AIscript : function()
 		{
 			//attack random party member
@@ -412,7 +414,7 @@ global.enemies =
 		agility: 5,
 		sprites: { idle: sSlimeBrown, attack: sSlimeBrownHit},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 30,
 		AIscript : function()
 		{
 			//attack random party member
@@ -441,7 +443,7 @@ global.enemies =
 		agility: 6,
 		sprites: { idle: sGiantCrab, attack: sGiantCrab},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 70,
 		AIscript : function()
 		{
 			//attack random party member
@@ -470,7 +472,7 @@ global.enemies =
 		agility: 5,
 		sprites: { idle: sTreant, attack: sTreant},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 70,
 		AIscript : function()
 		{
 			//attack random party member
@@ -499,7 +501,7 @@ global.enemies =
 		agility: 10,
 		sprites: { idle: sGiantCrab, attack: sGiantCrab},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 200,
 		AIscript : function()
 		{
 			//attack random party member
@@ -528,7 +530,7 @@ global.enemies =
 		agility: 15,
 		sprites: { idle: sAries, attack: sAries},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 200,
 		AIscript : function()
 		{
 			//attack random party member
@@ -557,7 +559,7 @@ global.enemies =
 		agility: 10,
 		sprites: { idle: sTreant, attack: sTreant},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 200,
 		AIscript : function()
 		{
 			//attack random party member
@@ -586,7 +588,7 @@ global.enemies =
 		agility: 15,
 		sprites: { idle: sEidolon, attack: sEidolon},
 		actions: [global.actionLibrary.attack],
-		xpValue : 15,
+		xpValue : 99999,
 		AIscript : function()
 		{
 			//attack random party member
