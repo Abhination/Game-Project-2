@@ -22,12 +22,12 @@ var up_key_release = keyboard_check_released(ord("W"));
 		
 if (up_key)
     {
-		sprite_index = spr_player_WDown;
+		sprite_index = spr_player_WUp;
         move_y -= movement_speed; // Move upward
     }
 if (up_key_release)
 	{
-		sprite_index = spr_player_Idling;	
+		sprite_index = spr_player_idle_back;	
 	}
 if (down_key)
     {
