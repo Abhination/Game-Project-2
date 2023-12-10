@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_npc1",
-    "path": "sprites/spr_npc1/spr_npc1.yy",
+    "name": "sMerchant",
+    "path": "sprites/sMerchant/sMerchant.yy",
   },
   "spriteMaskId": null,
   "visible": true,

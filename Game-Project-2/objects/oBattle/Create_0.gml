@@ -22,14 +22,14 @@ currentTargets=noone;
 //make targetting cursor
 cursor=
 {
-	activeUser:noone,
-	activeTarget:noone,
-	activeAction:-1,
-	targetSide:-1,
-	targetIndex:0,
-	targetAll:false,
-	confirmDelay:0,
-	active:false
+	activeUser: noone,
+	activeTarget: noone,
+	activeAction: -1,
+	targetSide: -1,
+	targetIndex: 0,
+	targetAll: false,
+	confirmDelay: 0,
+	active: false
 };
 
 //make enemies:

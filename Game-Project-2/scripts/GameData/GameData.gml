@@ -184,7 +184,7 @@ global.player = {
 	defense: 10,
 	intelligence: 10,
 	agility: 10,
-	sprites: {idle: spr_ally1_Idle, attack: spr_ally1_Attack, defend: spr_ally1_Defend, down: spr_ally1_Down},
+	sprites: {idle: spr_player_LRight, attack: spr_player_LRight, defend: spr_player_LRight, down: spr_ally2_Down},
 	actions: [global.actionLibrary.attack, global.actionLibrary.flee]
 }
 
@@ -293,7 +293,7 @@ global.allies = {
 		defense: 10,
 		intelligence: 10,
 		agility: 10,
-		sprites: {idle: spr_ally2_Idle, attack: spr_ally2_Attack, defend: spr_ally2_Defend, down: spr_ally2_Down},
+		sprites: {idle: spr_ally_Thea, attack: spr_ally_Thea, defend: spr_ally_Thea, down: spr_ally2_Down},
 		actions: [global.actionLibrary.attack, global.actionLibrary.ice, global.actionLibrary.heal]
 	}
 }
@@ -315,7 +315,7 @@ global.enemies =
 		defense: 5,
 		intelligence: 1,
 		agility: 5,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sSlimeGreen, attack: sSlimeGreenHit},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -346,7 +346,7 @@ global.enemies =
 		defense: 5,
 		intelligence: 7,
 		agility: 5,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sSlimeBlue, attack: sSlimeBlueHit},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -380,7 +380,7 @@ global.enemies =
 		defense: 5,
 		intelligence: 5,
 		agility: 5,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sSlimeRed, attack: sSlimeRedHit},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -409,7 +409,7 @@ global.enemies =
 		defense: 7,
 		intelligence: 5,
 		agility: 5,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sSlimeBrown, attack: sSlimeBrownHit},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -438,7 +438,7 @@ global.enemies =
 		defense: 10,
 		intelligence: 3,
 		agility: 6,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sGiantCrab, attack: sGiantCrab},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -467,7 +467,7 @@ global.enemies =
 		defense: 10,
 		intelligence: 6,
 		agility: 5,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sTreant, attack: sTreant},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -496,7 +496,7 @@ global.enemies =
 		defense: 10,
 		intelligence: 15,
 		agility: 10,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sGiantCrab, attack: sGiantCrab},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -525,7 +525,7 @@ global.enemies =
 		defense: 10,
 		intelligence: 10,
 		agility: 15,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sAries, attack: sAries},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -554,7 +554,7 @@ global.enemies =
 		defense: 15,
 		intelligence: 10,
 		agility: 10,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sTreant, attack: sTreant},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -583,7 +583,7 @@ global.enemies =
 		defense: 15,
 		intelligence: 15,
 		agility: 15,
-		sprites: { idle: spr_enemy1_Idle, attack: spr_enemy1_Attack},
+		sprites: { idle: sEidolon, attack: sEidolon},
 		actions: [global.actionLibrary.attack],
 		xpValue : 15,
 		AIscript : function()
@@ -687,7 +687,7 @@ function updateActions(){
 	if(global.inv[0] > 0){
 		hasHPPotion = true;
 	}
-	else if(global.inv[1] > 0){
+	if(global.inv[1] > 0){
 		hasMPPotion = true;
 	}
 	

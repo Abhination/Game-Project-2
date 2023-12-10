@@ -1,4 +1,4 @@
-xBuffer=25;
+/*xBuffer=25;
 yBuffer=25;
 text="This is a test with mannnnnnnnnnnnnnnnnnnnnn nnnnnnnnnnnnnnnnnnnnny wooooooooooooooords.";
 boxWidth=850-(2*xBuffer);//sprite_get_width(spr_box);

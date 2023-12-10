@@ -1,4 +1,4 @@
-if(keyboard_check_pressed(ord("Z")))
+/*if(keyboard_check_pressed(ord("Z")))
 {
 	if(page+1<array_length(text))
 	{

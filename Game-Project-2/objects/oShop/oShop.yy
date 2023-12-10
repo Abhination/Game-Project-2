@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_shopmanager",
-    "path": "sprites/spr_shopmanager/spr_shopmanager.yy",
+    "name": "sMerchant",
+    "path": "sprites/sMerchant/sMerchant.yy",
   },
   "spriteMaskId": null,
   "visible": true,

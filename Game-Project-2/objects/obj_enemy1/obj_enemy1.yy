@@ -34,6 +34,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyType","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"global.enemies.BlueSlime","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyType2","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"global.enemies.BlueSlime","varType":0,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemyType3","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"global.enemies.BlueSlime","varType":0,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"enemySprite","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_enemy1_Idle","varType":0,},
   ],
   "solid": false,
   "spriteId": {

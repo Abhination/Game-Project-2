@@ -16,3 +16,4 @@ global.pathSpeed = 2;
 global.enemyType = -1;
 global.enemyType2 = -1;
 global.enemyType3 = -1;
+global.enemySprite = enemySprite;

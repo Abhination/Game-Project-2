@@ -1,4 +1,4 @@
-myTextbox=noone;
+/*myTextbox=noone;
 
 
 myText[0]="Hello, I'm the blacksmith";

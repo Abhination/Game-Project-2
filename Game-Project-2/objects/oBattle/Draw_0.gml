@@ -95,7 +95,7 @@ if(cursor.active)
 		{
 			if(!is_array(activeTarget))
 			{
-				draw_sprite(spr_pointer,0,activeTarget.x,activeTarget.y);
+				draw_sprite(spr_pointer,0,activeTarget.x-50,activeTarget.y-35);
 			}
 			else
 			{

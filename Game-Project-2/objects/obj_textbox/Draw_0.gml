@@ -1,5 +1,5 @@
-//draw textbox
-draw_sprite_stretched(spr_box,0,x,y,850,200);
+/*//draw textbox
+draw_sprite_stretched(spr_box,0,x,y,(850/2)/2,(200/2)/2);
 
 //draw text
 draw_set_font(fnt_text_24);
