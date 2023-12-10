@@ -38,11 +38,13 @@ global.actionLibrary =
 		effectOnTarget: MODE.ALWAYS,
 		func : function(_user,_targets)
 		{
+			for (var i = 0; i < array_length(_targets); i++) {
 			var _attack = ceil(_user.intelligence + random_range(-mpCost, mpCost))
-			var _defense = (_attack / (_targets[0].defense + random_range(-_targets[0].defense * 0.125, _targets[0].defense * 0.125)))
+			var _defense = (_attack / (_targets[i].defense + random_range(-_targets[i].defense * 0.125, _targets[i].defense * 0.125)))
 			var _damage = ceil(_attack * _defense)
-			BattleChangeHP(_targets[0], -_damage);
+			BattleChangeHP(_targets[i], -_damage);
 			//BattleChangeMP(_user,_mpCost)
+			}
 		}
 	},
 	flee:

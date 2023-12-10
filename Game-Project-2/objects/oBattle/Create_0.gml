@@ -4,6 +4,10 @@ units=[];
 turn=0;
 unitTurnOrder=[];
 unitRenderOrder=[];
+audio_pause_sound(sTownMusic);
+audio_pause_sound(sCrossMusic);
+audio_pause_sound(sCaveMusic);
+audio_play_sound(sBattleMusic,1,true)
 
 global.count=0;
 

@@ -14,6 +14,7 @@
     {"name":"inst_4A493B4A","path":"rooms/rCrossroads/rCrossroads.yy",},
     {"name":"inst_1D50B0EC","path":"rooms/rCrossroads/rCrossroads.yy",},
     {"name":"inst_1788B6BD","path":"rooms/rCrossroads/rCrossroads.yy",},
+    {"name":"inst_42A9A0B7","path":"rooms/rCrossroads/rCrossroads.yy",},
   ],
   "isDnd": false,
   "layers": [
@@ -57,6 +58,7 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetY","path":"objects/oRoomExit/oRoomExit.yy",},"value":"522",},
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","objectId":{"name":"oRoomExit","path":"objects/oRoomExit/oRoomExit.yy",},"propertyId":{"name":"targetRoom","path":"objects/oRoomExit/oRoomExit.yy",},"value":"rVillage",},
           ],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":928.0,"y":0.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_42A9A0B7","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"objectId":{"name":"oCrossMusic","path":"objects/oCrossMusic/oCrossMusic.yy",},"properties":[],"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":800.0,"y":160.0,},
       ],"layers":[],"properties":[],"userdefinedDepth":false,"visible":true,},
     {"resourceType":"GMRTileLayer","resourceVersion":"1.1","name":"Tiles_1","depth":800,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"properties":[],"tiles":{"SerialiseHeight":68,"SerialiseWidth":120,"TileCompressedData":[
 -59,-2147483648,2,192,0,-118,-2147483648,2,214,0,-118,-2147483648,2,214,0,-118,-2147483648,2,258,0,-118,-2147483648,2,258,0,-118,-2147483648,2,214,0,-118,-2147483648,2,258,0,-118,-2147483648,2,258,0,-118,-2147483648,2,214,0,-118,-2147483648,2,214,0,-118,-2147483648,1,258,-119,-2147483648,1,258,-119,-2147483648,1,214,-119,-2147483648,1,214,-119,-2147483648,1,258,-119,-2147483648,1,258,-101,-2147483648,4,235,237,235,239,-3,235,12,239,237,238,235,237,238,237,235,239,235,239,236,-6180,-2147483648,],"TileDataFormat":1,},"tilesetId":{"name":"TileSet1","path":"tilesets/TileSet1/TileSet1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
