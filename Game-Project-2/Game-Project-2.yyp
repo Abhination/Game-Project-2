@@ -146,6 +146,7 @@
     {"id":{"name":"obj_merchant","path":"objects/obj_merchant/obj_merchant.yy",},},
     {"id":{"name":"sTavernkeep","path":"sprites/sTavernkeep/sTavernkeep.yy",},},
     {"id":{"name":"oBattle","path":"objects/oBattle/oBattle.yy",},},
+    {"id":{"name":"oEndScreen","path":"objects/oEndScreen/oEndScreen.yy",},},
     {"id":{"name":"pCoveF2Straight1","path":"paths/pCoveF2Straight1/pCoveF2Straight1.yy",},},
     {"id":{"name":"pCoveF2StraightMulti","path":"paths/pCoveF2StraightMulti/pCoveF2StraightMulti.yy",},},
     {"id":{"name":"obj_blacksmith","path":"objects/obj_blacksmith/obj_blacksmith.yy",},},

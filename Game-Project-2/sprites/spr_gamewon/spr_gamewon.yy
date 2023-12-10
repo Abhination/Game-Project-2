@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_gamewon",
-  "bbox_bottom": 432,
+  "bbox_bottom": 777,
   "bbox_left": 504,
   "bbox_right": 1373,
   "bbox_top": 299,
